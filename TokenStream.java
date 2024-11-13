@@ -63,7 +63,7 @@ public class TokenStream {
 				// skip rest of line - it's a comment.
 				// TODO TO BE COMPLETED
 				// look for <cr>, <lf>, <ff>
-				while (!isEndOfLine(nextChar)) {
+				while (!isEndOfLine(nextChar) && !isEof) {
 					nextChar = readChar();
 				}
 				skipWhiteSpace();
