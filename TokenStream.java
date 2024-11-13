@@ -48,11 +48,6 @@ public class TokenStream {
 		// First check for whitespaces and bypass them
 		skipWhiteSpace();
 
-		if (isEof) {
-			return null;
-		}
-	
-
 		// Then check for a comment, and bypass it
 		// but remember that / may also be a division operator.
 		while (nextChar == '/') {
